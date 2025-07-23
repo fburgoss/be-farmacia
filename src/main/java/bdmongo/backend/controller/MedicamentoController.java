@@ -34,4 +34,9 @@ public class MedicamentoController {
         medicamento.setId(id);
         return medicamentoRepository.save(medicamento);
     }
+
+    @GetMapping("/destacados")
+    public List<Medicamento> obtenerDestacados() {
+        return medicamentoRepository.findByDestacadoTrue();
+    }
 }

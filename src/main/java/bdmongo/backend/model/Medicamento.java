@@ -14,6 +14,7 @@ public class Medicamento {
     private String laboratorio;
     private double precio;
     private String peso;
+    private boolean destacado;
 
     // Getters y Setters
     public String getId() { return id; }
@@ -36,4 +37,8 @@ public class Medicamento {
 
     public String getPeso() { return peso; }
     public void setPeso(String peso) { this.peso = peso; }
+
+    public boolean isDestacado() { return destacado;}
+    public void setDestacado(boolean destacado) { this.destacado = destacado;
+    }
 }
